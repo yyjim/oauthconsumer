@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
-  s.source_files  = '**/*.{h,m}'
+  s.source_files  = '**/*.{h,m,c}'
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   s.framework = 'Security'
