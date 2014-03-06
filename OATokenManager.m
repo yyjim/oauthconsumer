@@ -232,7 +232,7 @@
 			return;
 		}
 	}
-	OACall *call = [[OACall alloc] initWithURL:[NSURL URLWithString:[oauthBase stringByAppendingString:@"request_token"]] method:@"POST"];
+	OACall *call = [[[OACall alloc] initWithURL:[NSURL URLWithString:[oauthBase stringByAppendingString:@"request_token"]] method:@"POST"] autorelease];
 	[call perform:consumer
 			token:initialToken
 			realm:realm
@@ -272,7 +272,7 @@
 		return;
 	}
 	NSURL *url = [NSURL URLWithString:[oauthBase stringByAppendingString:@"access_token"]];
-	OACall *call = [[OACall alloc] initWithURL:url method:@"POST"];
+	OACall *call = [[[OACall alloc] initWithURL:url method:@"POST"] autorelease];
 	[call perform:consumer
 			token:reqToken
 			realm:realm
@@ -294,7 +294,7 @@
 	}
 	acToken.forRenewal = YES;
 	NSURL *url = [NSURL URLWithString:[oauthBase stringByAppendingString:@"access_token"]];
-	OACall *call = [[OACall alloc] initWithURL:url method:@"POST"];
+	OACall *call = [[[OACall alloc] initWithURL:url method:@"POST"] autorelease];
 	[call perform:consumer
 			token:acToken
 			realm:realm
