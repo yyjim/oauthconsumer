@@ -82,7 +82,7 @@ static NSString *Boundary = @"-----------------------------------0xCoCoaouTHeBou
 
 - (void)setHTTPBodyWithString:(NSString *)body {
 	NSData *bodyData = [body dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-	[self setValue:[NSString stringWithFormat:@"%d", [bodyData length]] forHTTPHeaderField:@"Content-Length"];
+	[self setValue:[NSString stringWithFormat:@"%@", @([bodyData length])] forHTTPHeaderField:@"Content-Length"];
 	[self setHTTPBody:bodyData];
 }
 
