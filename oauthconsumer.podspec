@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = "google", "jdg", "yyjim"
   s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/yyjim/oauthconsumer.git", :tag => "0.0.1-cb" }
+  s.source       = { :git => "https://github.com/yyjim/oauthconsumer.git", :tag => s.version }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
