@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "oauthconsumer"
-  s.version      = "0.0.2-cb"
+  s.version      = "0.0.3-cb"
   s.summary      = "An OAuth Consumer implementation in Objective-C"
   s.description  = <<-DESC
                       This is an iPhone ready version of:
